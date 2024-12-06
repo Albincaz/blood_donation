@@ -21,6 +21,7 @@
     <div class="form-container">
       <form action="/submit" method="POST" class="form">
         <h2>Registration Form</h2>
+        
         <label for="name">Name:</label>
         <input
           type="text"
@@ -29,9 +30,9 @@
           required
           placeholder="Enter your name"
         />
-
-        <div class="gen">
-          <label>Gender:</label>
+        
+        <fieldset class="gen">
+          <legend>Gender:</legend>
           <div class="radio-group">
             <input type="radio" id="male" name="gender" value="Male" required />
             <label for="male">Male</label>
@@ -40,11 +41,11 @@
             <input type="radio" id="other" name="gender" value="Other" />
             <label for="other">Other</label>
           </div>
-        </div>
-
+        </fieldset>
+    
         <label for="bloodgroup">Blood Group:</label>
         <select id="bloodgroup" name="bloodgroup" required>
-          <option value="" disabled selected>Select your blood group</option>
+          <option value="" disabled hidden>Select your blood group</option>
           <option value="A+">A+</option>
           <option value="A-">A-</option>
           <option value="B+">B+</option>
@@ -54,7 +55,7 @@
           <option value="AB+">AB+</option>
           <option value="AB-">AB-</option>
         </select>
-
+    
         <label for="address">Address:</label>
         <textarea
           id="address"
@@ -62,7 +63,7 @@
           rows="4"
           placeholder="Enter your full address including street, city, and zip code"
         ></textarea>
-
+    
         <label for="phone">Phone Number:</label>
         <input
           type="tel"
@@ -73,9 +74,22 @@
           placeholder="Enter your 10-digit phone number"
           title="Please enter a valid 10-digit phone number"
         />
-
-        <button type="submit" id="btn">Submit</button>
+    
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter your email address"
+        />
+    
+        <div class="form-actions">
+          <button type="reset">Reset</button>
+          <button type="submit" id="btn">Submit</button>
+        </div>
       </form>
     </div>
+    
   </body>
 </html>
