@@ -79,7 +79,7 @@ const app=http.createServer(async (req,res)=>{
         req.on("end",async()=>{
             let _id=new ObjectId(body)
             console.log(_id);
-            await collection.deleteOne({_id}).then(()=>{
+            await collection.deleteOne({_id}).then(()=>{alhost:3001
                 res.writeHead(200,{"Content-Type":"text/json"})
                 res.end("Successfully Deleted")
             }).catch((error)=>{
