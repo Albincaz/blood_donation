@@ -65,3 +65,42 @@
         display: flex;
     }
 }
+
+.display-details{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.tmain{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.tmain button{
+    width: auto;
+    background-color: red;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    font-size: 11px;
+}
+
+.phone{
+    display: none;
+}
+
+.phone input{
+    border: none;
+    background-color: rgb(252, 140, 140);
+}
+
+tr,td,th{
+    border: 1px solid black;
+    background-color: white;
+}
+
+.buttons-phone button{
+    display: none;
+}
